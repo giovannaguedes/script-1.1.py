@@ -1,0 +1,72 @@
+Host and Port Scanning
+
+The code below performs an automated host and port scan.
+
+📝 Guide: Creating and Running Your First Python Script
+
+1. Create the script file
+
+Open the terminal and create a file named script-1.2.py:
+
+nano script-1.2.py
+
+2. Add the Python code
+
+Paste the following code (corrected some syntax issues from the original example):
+
+#!/usr/bin/python3
+# My first Python script
+# Educational use – learning data types and user input
+
+print("M!ss s3c")  # Initial print message
+
+# Requesting user input
+ip = input("Enter the IP: ")
+porta = int(input("Enter the port: "))  # converting to integer
+ver = 1.1  # fictitious script version
+
+# Displaying variable types
+print("IP -", type(ip))
+print("Port -", type(porta))
+print("Ver -", type(ver))
+
+# Displaying a formatted message
+print("Scanning Host: %s on port %d" % (ip, porta))
+
+
+⚠️ Note: This code does not perform a real network scan (and should not). It is only an educational example to practice user input, variables, and data types in Python.
+
+3. Give execution permission
+
+In the terminal, give the file permission to be executed as a program:
+
+chmod +x script-1.2.py
+
+4. Run the script
+
+Now run it in the terminal:
+
+./script-1.2.py
+
+5. Example output
+M!ss s3c
+Enter the IP: 127.0.0.1
+Enter the port: 80
+IP - <class 'str'>
+Port - <class 'int'>
+Ver - <class 'float'>
+Scanning Host: 127.0.0.1 on port 80
+
+👉 What you learned from this script
+
+(#!/usr/bin/python3) → allows running the script directly in the terminal.
+
+print() → displays messages on the screen.
+
+input() → captures user input (always as text).
+
+int() → converts a string to an integer.
+
+type() → shows the type of a variable (str, int, float...).
+
+String formatting %s and %d → inserts variable values into a string.
